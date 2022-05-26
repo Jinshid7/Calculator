@@ -1,17 +1,15 @@
 #!/usr/bin/env python
 from flask import Flask
 app = Flask(_name_)
-@app.route('/addition')
-def addition(a,b):
+@app.route('/square/<a>')
+def square(a):
     a= int(a)
-    b= int(b)
-    return str(a+b)+"\n"
+    return str(a*a)+"\n"
 
-@app.route('/subtraction')
-def subtraction(c,d):
-    c= int(c)
-    d= int(d)
-    return str(c-d)+"\n"
+@app.route('/cube/<b>')
+def cube(b):
+    b= int(b)
+    return str(b*b*b)+"\n"
 
 @app.route('/')
 def intro():
