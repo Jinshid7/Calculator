@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask
+import math
 app = Flask(__name__)
 @app.route('/square/<a>')
 def square(a):
@@ -10,6 +11,11 @@ def square(a):
 def cube(b):
     b= int(b)
     return str(b*b*b)+"\n"
+
+@app.route('/sqrot/<c>')
+def sqrot(c):
+    c=int(c)
+    return str(sqrt(c))+"\n"
 
 @app.route('/')
 def intro():
