@@ -15,5 +15,5 @@ def cube(b):
 def intro():
     return "This is an arithmetic calculator\n"
 
-if _name_ == '__main__':
+if __name__ == '__main__':
     app.run(host='0.0.0.0')  # open for everyone
