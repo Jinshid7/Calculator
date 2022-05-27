@@ -12,10 +12,10 @@ def cube(b):
     b= int(b)
     return str(b*b*b)+"\n"
 
-@app.route('/sqrot/<c>')
+'''@app.route('/sqrot/<c>')
 def sqrot(c):
     c= int(c)
-    return str(sqrt(c))+"\n"
+    return str(sqrt(c))+"\n"'''
 
 @app.route('/')
 def intro():
