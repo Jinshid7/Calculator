@@ -16,11 +16,6 @@ pipeline {
         }
       }    
     }
-    stage('deploy') {
-            steps {
-                bat "mvn package -f calculator"
-            }
-    }
     
   }
 }
