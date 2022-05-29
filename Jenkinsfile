@@ -19,12 +19,5 @@ pipeline {
         }
       }    
     }
-    '''stage('deploy') {
-      steps {
-        sh 'python3 package.py'
-      }
-    }'''
-    
-   
   }
 }
