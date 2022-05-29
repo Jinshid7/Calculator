@@ -15,14 +15,15 @@ pipeline {
       post {
         always {
           junit 'test-reports/*.xml'
+          sh 'pyinstaller app.py --onefile'
         }
       }    
     }
-    stage('deploy') {
+    '''stage('deploy') {
       steps {
         sh 'python3 package.py'
       }
-    }
+    }'''
     
    
   }
