@@ -1,6 +1,8 @@
 import PyInstaller.__main__
 PyInstaller.__main__.run([
-  'app.py'
+  
+  '/home/abc'
   '--onefile',
   '--windowed',
+  'app.py'
 ])
