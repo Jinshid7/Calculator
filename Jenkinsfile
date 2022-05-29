@@ -15,7 +15,7 @@ pipeline {
       post {
         always {
           junit 'test-reports/*.xml'
-          sh 'pyinstaller app.py --onefile'
+          sh 'python3 package.py'
         }
       }    
     }
