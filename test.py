@@ -27,7 +27,7 @@ class TestHello(unittest.TestCase):
         self.assertEqual(rv.data, b'125\n')
     
     
-    
+  
     
     def test_area_sq(self):
         d=7
