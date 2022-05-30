@@ -23,6 +23,6 @@ pipeline {
         sh 'python3 package.py'
       }
     }
-    
+
   }
 }
