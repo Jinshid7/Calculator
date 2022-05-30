@@ -17,7 +17,7 @@ def sqrot(c):
     c= int(c)
     return str(sqrt(c))+"\n"
 
-@app.route('/area_sq/<c>')
+@app.route('/area_sq/<d>')
 def area_sq(d):
     d= int(d)
     return str(d*d)+"\n"
