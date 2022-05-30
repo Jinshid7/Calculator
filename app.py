@@ -17,6 +17,11 @@ def sqrot(c):
     c= int(c)
     return str(sqrt(c))+"\n"
 
+@app.route('/area_sq/<c>')
+def area_sq(d):
+    d= int(d)
+    return str(d*d)+"\n"
+
 @app.route('/')
 def intro():
     return "This is an arithmetic calculator\n"
