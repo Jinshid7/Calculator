@@ -19,11 +19,22 @@ class TestHello(unittest.TestCase):
         self.assertEqual(rv.status, '200 OK')
         self.assertEqual(rv.data, b'49\n')
 
+    
     def test_cube(self):
         b=5
         rv = self.app.get(f'/cube/{b}')
         self.assertEqual(rv.status, '200 OK')
         self.assertEqual(rv.data, b'125\n')
+    
+    
+    
+    
+    def test_area_sq(self):
+        d=7
+        rv = self.app.get(f'/area_sq/{d}')
+        self.assertEqual(rv.status, '200 OK')
+        self.assertEqual(rv.data, b'49\n')
+    
 
 if __name__ == '__main__':
     import xmlrunner
